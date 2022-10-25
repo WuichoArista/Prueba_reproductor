@@ -1,0 +1,75 @@
+@import './buttons.css';
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #26B4BC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.contenedor{
+    max-inline-size: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.player{
+    inline-size: 100%;
+    position: relative;
+}
+
+.video{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+
+}
+
+.player_titulo{
+    color: white;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+}
+
+.player_accion{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    inset-block-start: 0;
+
+}
+
+
+.player_progreso{
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px;
+
+}
+
+.player_progreso input{
+    flex: 1;
+}
+
+.player_overlay{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.player:hover .player_overlay {
+    opacity: 1;
+}
+
+
+ 
